@@ -12,9 +12,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.b3log</groupId>
-    <artifactId>solo</artifactId>
+    <artifactId>blog</artifactId>
     <packaging>war</packaging>
-    <name>Solo</name>
+    <name>blog</name>
     <version>2.9.3</version>
     <description>
         A blogging system written in Java, feel free to create your or your team own blog.
@@ -457,7 +457,7 @@
 
         </plugins>
 
-        <finalName>solo</finalName>
+        <finalName>blog</finalName>
     </build>
 
     <profiles>
