@@ -98,5 +98,5 @@
         
     <include path="/CHANGE_LOGS.html" />
     <include path="/LICENSE.txt" />
-        
+
 </static-files>
