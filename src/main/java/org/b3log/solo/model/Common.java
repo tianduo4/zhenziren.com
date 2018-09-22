@@ -343,6 +343,16 @@ public final class Common {
     public static final String GRAVATAR = "gravatar";
 
     /**
+     * Key of Index ads.
+     */
+    public static final String ADS_INDEX_TITLE = "adsIndexTitle";
+
+    /**
+     * Key of Index ads.
+     */
+    public static final String ADS_INDEX = "adsIndex";
+
+    /**
      * Private constructor.
      */
     private Common() {

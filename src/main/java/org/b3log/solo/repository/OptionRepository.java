@@ -19,6 +19,8 @@ package org.b3log.solo.repository;
 
 
 import org.b3log.latke.repository.Repository;
+import org.b3log.latke.repository.RepositoryException;
+import org.json.JSONObject;
 
 
 /**
@@ -28,4 +30,6 @@ import org.b3log.latke.repository.Repository;
  * @version 1.0.0.0, Jan 24, 2013
  * @since 0.6.0
  */
-public interface OptionRepository extends Repository {}
+public interface OptionRepository extends Repository {
+    JSONObject getFromDB(final String id) throws RepositoryException;
+}

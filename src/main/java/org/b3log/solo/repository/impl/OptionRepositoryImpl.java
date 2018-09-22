@@ -50,6 +50,10 @@ public class OptionRepositoryImpl extends AbstractRepository implements OptionRe
         super(Option.OPTION);
     }
 
+    public JSONObject getFromDB(final String id) throws RepositoryException {
+        return  super.get(id);
+    }
+
     @Override
     public void remove(final String id) throws RepositoryException {
         super.remove(id);

@@ -62,6 +62,21 @@ public class OptionQueryService {
     }
 
     /**
+     * Gets an option with the specified option id.
+     *
+     * @param optionId the specified option id
+     * @return an option, returns {@code null} if not found
+     * @throws ServiceException service exception
+     */
+    public JSONObject getFromDBOptionById(final String optionId) throws ServiceException {
+        try {
+            return optionRepository.getFromDB(optionId);
+        } catch (final RepositoryException e) {
+            throw new ServiceException(e);
+        }
+    }
+
+    /**
      * Gets options with the specified category.
      * <p>
      * All options with the specified category will be merged into one json object as the return value.

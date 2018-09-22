@@ -786,8 +786,30 @@ public class Filler {
             if (Templates.hasExpression(template, "<#list mostViewCountArticles as article>")) {
                 fillMostViewCountArticles(dataModel, preference);
             }
+            fillAds(dataModel, preference);
         } catch (final ServiceException e) {
             LOGGER.log(Level.ERROR, "Fills side failed", e);
+            throw new ServiceException(e);
+        } finally {
+            Stopwatchs.end();
+        }
+    }
+
+    private void fillAds(final Map<String, Object> dataModel, final JSONObject preference) throws ServiceException{
+        Stopwatchs.start("Fill ads");
+
+        try {
+            final JSONObject adTitleOption = optionQueryService.getFromDBOptionById(Option.ID_C_ADS_INDEX_TITLE);
+            if (adTitleOption!=null) {
+                dataModel.put(Common.ADS_INDEX_TITLE, adTitleOption.optString(Option.OPTION_VALUE));
+            }
+
+            final JSONObject adOption = optionQueryService.getFromDBOptionById(Option.ID_C_ADS_INDEX);
+            if (adOption!=null) {
+                dataModel.put(Common.ADS_INDEX, adOption.optString(Option.OPTION_VALUE));
+            }
+        } catch (final Exception e) {
+            LOGGER.log(Level.ERROR, "Fills ads failed", e);
             throw new ServiceException(e);
         } finally {
             Stopwatchs.end();

@@ -306,6 +306,17 @@ public final class Option {
      */
     public static final String ID_C_STATISTIC_PUBLISHED_ARTICLE_COUNT = "statisticPublishedBlogArticleCount";
 
+    /**
+     * Key of index ads.
+     */
+    public static final String ID_C_ADS_INDEX_TITLE = "ads_index_title";
+
+    /**
+     * Key of index ads.
+     */
+    public static final String ID_C_ADS_INDEX = "ads_index";
+
+
     // Category constants
     /**
      * Broadcast.

@@ -110,16 +110,9 @@
                 </main>
             </div>
         </#if>
-        <div class="module">
-            <header><h2>好书推荐</h2></header>
-            <!--码农翻身-->
-            <script type="text/javascript">var jd_union_pid="1470678319";var jd_union_euid="";</script><script type="text/javascript" src="//ads-union.jd.com/static/js/union.js"></script>
-            <!--亿级流量-->
-            <script type="text/javascript">var jd_union_pid="1470754009";var jd_union_euid="";</script><script type="text/javascript" src="//ads-union.jd.com/static/js/union.js"></script>
-            <!--深入理解Java虚拟机-->
-            <script type="text/javascript">var jd_union_pid = "1468705588";var jd_union_euid = "";</script><script type="text/javascript" src="//ads-union.jd.com/static/js/union.js"></script>
-            <!--Spring Cloud与Docker微服务架构实战（第2版）-->
-            <script type="text/javascript">var jd_union_pid="1470650255";var jd_union_euid="";</script><script type="text/javascript" src="//ads-union.jd.com/static/js/union.js"></script>
+        <div class="module"> <!--广告-->
+            <header><h2>${adsIndexTitle}</h2></header>
+            ${adsIndex}
         </div>
     </section>
 </aside>
