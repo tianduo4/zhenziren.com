@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <link rel="shoticon" href="../../favicon.ico" type="image/x-icon">
+    <link rel="canonical" href="https://www.zhenziren.com/blog/tools/online-markdown/index.html">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,user-scalable=0">
+    <meta name="description" content="微信公众号Markdown排版工具，方便一键由Markdown格式的文件直接转成微信公号格式发布。适合Markdown格式化，代码格式美化，方便Markdown格式的文件对微信公众号进行文章排版，代码格式不再错乱，支持更换代码样式主题，代码长度溢出时横向滚动。">
+    <title>微信公众号Markdown排版工具</title>
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="themes/github-v2.css" id="codeThemeId" />
+    <link rel="stylesheet" id="pageThemeId" />
+    <style type="text/css">
+        html, body {
+            height: 100%;
+        }
+        .topheader {
+            width: 100%;
+            float: left;
+        }
+        #input {
+            width: 50%;
+            position: absolute;
+            left: 0px;
+        }
+        #output {
+            width: 50%;
+            position: absolute;
+            left: 50%;
+        }
+        .convert-button, .copy-button {
+            position: inherit;
+        }
+    </style>
+</head>
+<body>
+<div class="topheader">
+    <a href="https://www.zhenziren.com" title="许仕鹏的博客 - Learning on the way"><h1>微信公众号Markdown排版工具</h1></a>
+    <span>Markdown文件微信排版</span>
+    <!--<span style="float: right;color: #000;top: 35px;right: 50px;">Copyright 2018 <a href="https://www.flyzy2005.cn" style="color: #999; font-size: 16px">flyzy小站</a></span>-->
+</div>
+
+<!--编辑-->
+<textarea id="input" spellcheck="false"></textarea>
+
+<!--预览-->
+<div id="output" class="themes-config">
+    <div class="theme-wrapper">
+        <label>页面主题选择：</label><select class="page-theme"></select><br><br>
+        <label>代码主题选择：</label><select class="code-theme"></select>
+    </div>
+    <div class="theme-wrapper">
+        <button class="btn copy-button" data-clipboard-action="cut" data-clipboard-target="#outputCtt">复制</button>
+    </div>
+    <div class="wrapper" id="outputCtt"></div>
+</div>
+</body>
+</html>

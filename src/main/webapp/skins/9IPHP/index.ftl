@@ -29,6 +29,13 @@
         <meta name="description" content="${metaDescription}"/>
         </#if>
         </@head>
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({
+                    google_ad_client: "ca-pub-7649891113699425",
+                    enable_page_level_ads: true
+                });
+            </script>
     </head>
     <body>
         <#include "header.ftl">

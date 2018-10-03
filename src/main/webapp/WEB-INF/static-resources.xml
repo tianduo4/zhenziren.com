@@ -33,7 +33,9 @@
     <include path="/jd_root.txt" />
     <include path="/baidu_verify_STgGCk66dn.html" />
     <include path="/baidu_verify_YR3TetzNR9.html" />
+    <include path="/online-markdown.html" />
 
+    <include path="/tools/**/**.*"/>
     <include path="/js/**.js"/>
     <include path="/js/**/*.js"/>
     <include path="/js/**.css"/>
