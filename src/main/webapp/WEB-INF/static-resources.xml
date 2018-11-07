@@ -33,8 +33,12 @@
     <include path="/jd_root.txt" />
     <include path="/baidu_verify_STgGCk66dn.html" />
     <include path="/baidu_verify_YR3TetzNR9.html" />
+    <include path="/hao.html" />
     <include path="/online-markdown.html" />
-
+    <include path="/08847623c94b48f9bd9c3c6099595555.html" />
+    <include path="/root.txt" />
+    <include path="/bdunion.txt" />
+    
     <include path="/tools/**/**.*"/>
     <include path="/js/**.js"/>
     <include path="/js/**/*.js"/>
